@@ -1,2 +1,0 @@
-# arteagac.github.io
-Website
