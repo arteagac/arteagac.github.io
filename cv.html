@@ -10,7 +10,6 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.css">
-	<div id="imports_sec"></div>
 </head>
 
 
@@ -19,11 +18,10 @@
 <script>
 
 var curpath = window.location.pathname;
-var filename = curpath.substring(curpath.lastIndexOf("/") + 1);
-var PAGE = ((filename == '') ? 'index.html' : "pages/"+filename);
+var filename = "pages/"+curpath.substring(curpath.lastIndexOf("/") + 1);
+var PAGE = ((filename == '') ? 'index.html' : filename);
 
 $(function(){
-  $("#imports_sec").load("imports.html");
   $("#template_sec").load("template.html");
 });
 

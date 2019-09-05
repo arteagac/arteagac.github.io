@@ -13,7 +13,6 @@
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
-  <div id="imports_sec"></div>
 </head>
 
 
@@ -22,11 +21,10 @@
 <script>
 
 var curpath = window.location.pathname;
-var filename = curpath.substring(curpath.lastIndexOf("/") + 1);
-var PAGE = ((filename == '') ? 'index.html' : "pages/"+filename);
+var filename = "pages/"+curpath.substring(curpath.lastIndexOf("/") + 1);
+var PAGE = ((filename == '') ? 'index.html' : filename);
 
 $(function(){
-  $("#imports_sec").load("imports.html");
   $("#template_sec").load("template.html");
 });
 
