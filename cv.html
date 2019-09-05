@@ -20,7 +20,7 @@
 
 var curpath = window.location.pathname;
 var filename = curpath.substring(curpath.lastIndexOf("/") + 1);
-var PAGE = ((filename == '') ? 'index.html' : filename);
+var PAGE = ((filename == '') ? 'index.html' : "pages/"+filename);
 
 $(function(){
   $("#imports_sec").load("imports.html");
